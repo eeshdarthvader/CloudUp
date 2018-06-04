@@ -1,6 +1,6 @@
 .container {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 10px;
   text-align: center;
 }
@@ -13,8 +13,25 @@
   padding: 10px;
   width: 100%;
   position: absolute;
-  top: 200px;
-  left: 130px;
+  top: 179px;
+  left: 122px;
+}
+
+.dropzone {
+  width: 200px;
+  height: 200px;
+  border-width: 2px;
+  border-color: rgb(193, 51, 136);
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.dropZoneFont {
+  font-size: 21px;
+  color: lightgrey;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 10px;
 }
 
 .container h2 {

@@ -1,10 +1,10 @@
 version: 0.0.1
 files:
   - url: electron-react-boilerplate-0.0.1-mac.zip
-    sha512: 1qCnodqk/QI9vuHduJyH7sbxlROZcCcxdGd7IuyJae9pNmBjScAS3qsmLF1mf/UVRx7hM78f4EzglZIGphz5YQ==
+    sha512: Z/nCxgwle9oQU+fx2yZoWCuxIlz0EvfIwZgwAcNDVHi8wwcaBWfObsmiASQ5Mg6f8JAuTGNs2CaTN4JHTIS6sw==
   - url: CloudUp-0.0.1.dmg
-    sha512: 1ZlctGqtTbq7aaCoh2EkE79/aNsaV+8K4locsZx3uwZ4aTzJG7IUX3LsqHYD53Bq2BxR1FKzdmze+xWV3sAa4g==
-    size: 48945495
+    sha512: VAswTY1W0tHA8HPuf9+jEbXT+7HJu8xtbxw1sK/AUJ5498CwUFljUzIYOu1juf9wXx+Gr1x4cGaHZCYuHEyofQ==
+    size: 49182384
 path: electron-react-boilerplate-0.0.1-mac.zip
-sha512: 1qCnodqk/QI9vuHduJyH7sbxlROZcCcxdGd7IuyJae9pNmBjScAS3qsmLF1mf/UVRx7hM78f4EzglZIGphz5YQ==
-releaseDate: '2018-06-04T07:07:23.490Z'
+sha512: Z/nCxgwle9oQU+fx2yZoWCuxIlz0EvfIwZgwAcNDVHi8wwcaBWfObsmiASQ5Mg6f8JAuTGNs2CaTN4JHTIS6sw==
+releaseDate: '2018-06-04T09:59:16.603Z'

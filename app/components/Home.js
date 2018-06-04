@@ -9,6 +9,11 @@ import styles from './Home.css'
 type Props = {}
 
 export default class Home extends Component<Props> {
+  constructor() {
+    super()
+    this.state = { files: [] }
+  }
+
   props: Props
 
   handleDrop = files => {
@@ -35,6 +40,9 @@ export default class Home extends Component<Props> {
           const data = response.data
           const fileURL = data.secure_url // You should store this URL for future references in your app
           console.log(data)
+          this.setState({
+            files
+          })
         })
     })
 
@@ -45,22 +53,45 @@ export default class Home extends Component<Props> {
   }
 
   render() {
+    const dropzoneStyle = {
+      width: '100%',
+      height: '170px',
+      border: '1px solid black',
+      borderColor: 'rgb(193, 51, 136)',
+      borderStyle: 'dashed',
+      borderRadius: '5'
+    }
     return (
       <div>
         <div className={styles.container} data-tid="container">
           <div className={styles.cloudinaryIcon}>
             <CloudinaryIcon height="100" width="100" />
           </div>
-          <div className={styles.uploadPhoto}>
-            <Dropzone
-              onDrop={this.handleDrop}
-              multiple
-              accept="image/*"
-              style={styles.dropzone}
-            >
-              <p>Drop your files or click here to upload</p>
-            </Dropzone>
-          </div>
+          <section style={{ width: '98%' }}>
+            <div className="dropzone">
+              <Dropzone
+                onDrop={this.handleDrop}
+                multiple
+                accept="image/*"
+                className="dropzone"
+                style={dropzoneStyle}
+              >
+                <p className={styles.dropZoneFont}>
+                  Try dropping some files here, or click to select files to
+                  upload.
+                </p>
+              </Dropzone>
+            </div>
+            <aside>
+              <ul>
+                {this.state.files.map(f => (
+                  <li key={f.name}>
+                    {f.name} - {f.size} bytes
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </section>
         </div>
       </div>
     )
