@@ -17,11 +17,11 @@
 
 CloudUp is currently in beta. Please feel free to report any bugs or error you may come across.
 
-<a href="https://github.com/eeshdarthvader/CloudUp/raw/master/release/CloudUp-0.0.1-mac.zip">
+<a href="https://github.com/eeshdarthvader/CloudUp/raw/master/release/CloudUp-0.0.1.dmg">
   <img src="https://www.dropbox.com/s/q16jtzvdtenyl3x/button.svg?raw=1" width="200">
 </a>
 
-<sub><strong>v0.2.0 Beta</strong></sub>
+<sub><strong>v0.0.1 Beta</strong></sub>
 
 #### Development setup
 

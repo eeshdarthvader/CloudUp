@@ -41,7 +41,6 @@ flow-typed/npm/*
 release/github
 release/mac
 release/electron-builder-effective-config.yaml
-release/CloudUp-0.0.1.dmg
 release/CloudUp-0.0.1.dmg.blockmap
 app/main.prod.js
 app/main.prod.js.map
