@@ -11,7 +11,9 @@
 
 ---
 
+<p align="center">
 ![Electron Cloudinary Demo](https://res.cloudinary.com/cleartrip/image/upload/v1528119839/cloudup_g93ojx.gif)
+</p>
 
 ## Installation
 
