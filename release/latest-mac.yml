@@ -1,0 +1,10 @@
+version: 1.0.0
+files:
+  - url: electron-react-boilerplate-1.0.0-mac.zip
+    sha512: /dDCRsR0OX17Wkck9zSGavR6g/bXS0WVYLR2kzAvYGpaS9liN/WQQIYn/CQWTYQLA0O9nTGNT2AUGaRKfLuNiw==
+  - url: ElectronReact-1.0.0.dmg
+    sha512: t3LQN7kpxTeMAe29rxH4n3Shhc/wVb3hmjc7tJrNqYwwjpsFrAPzkDVEPGoJ4L95zVKxcyppTi7OqazjI/VtRw==
+    size: 48946455
+path: electron-react-boilerplate-1.0.0-mac.zip
+sha512: /dDCRsR0OX17Wkck9zSGavR6g/bXS0WVYLR2kzAvYGpaS9liN/WQQIYn/CQWTYQLA0O9nTGNT2AUGaRKfLuNiw==
+releaseDate: '2018-06-04T04:05:02.611Z'

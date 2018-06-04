@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.dropbox.com/s/su06tfi7nvroe2b/logo.svg?raw=1" width="40px">
+  <img src="https://res.cloudinary.com/cleartrip/image/upload/v1528094568/cloudUp_y4zp7d.svg" width="40px">
 </p>
 <h3 align="center">
   CloudUp
@@ -26,7 +26,6 @@ CloudUp is currently in beta. Please feel free to report any bugs or error you m
 #### Development setup
 
 * **Note: requires a node version >= 7 and an npm version >= 4.**
-* **If you have installation or compilation issues with this project, please see [our debugging guide](https://github.com/chentsulin/electron-react-boilerplate/issues/400)**
 
 First, clone the repo via git:
 
@@ -156,7 +155,7 @@ See [#118](https://github.com/chentsulin/electron-react-boilerplate/issues/118) 
 
 ## Contributing
 
-Crimp is built on web technologies using [Electron](https://electron.atom.io/) and [React](https://reactjs.org/). Incase, you wish to contribute please submit a [Issue](https://github.com/ghosh/Crimp/issues) first outlining the changes you would like to make.
+Crimp is built on web technologies using [Electron](https://electron.atom.io/) and [React](https://reactjs.org/). Incase, you wish to contribute please submit a [Issue](https://github.com/eeshdarthvader/CloudUp/issues) first outlining the changes you would like to make.
 
 &nbsp;
 
@@ -168,4 +167,4 @@ This project is licensed under [MIT license](https://opensource.org/licenses/MIT
 
 ## Made by
 
-Indrashish Ghosh – [@\_ighosh](https://twitter.com/_ighosh) 🇮🇳
+Eesh Tyagi – [@\EtEesh](https://twitter.com/EtEesh) 🇮🇳
