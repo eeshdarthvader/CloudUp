@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/cleartrip/image/upload/w_100,h_100/v1528096238/LogoMakr_0iLhlw_hcw6hu.png" width="40px">
+  <img src="https://res.cloudinary.com/cleartrip/image/upload/w_100,h_100/v1528096238/LogoMakr_0iLhlw_hcw6hu.png" width="100px">
 </p>
 <h3 align="center">
   CloudUp
@@ -17,7 +17,7 @@
 
 CloudUp is currently in beta. Please feel free to report any bugs or error you may come across.
 
-<a href="https://github.com/eeshdarthvader/CloudUp/release/CloudUp-0.0.1-mac.zip">
+<a href="https://github.com/eeshdarthvader/CloudUp/raw/master/release/CloudUp-0.0.1-mac.zip">
   <img src="https://www.dropbox.com/s/q16jtzvdtenyl3x/button.svg?raw=1" width="200">
 </a>
 
@@ -30,7 +30,7 @@ CloudUp is currently in beta. Please feel free to report any bugs or error you m
 First, clone the repo via git:
 
 ```bash
-git clone --depth=1 https://github.com/chentsulin/electron-react-boilerplate.git your-project-name
+git clone --depth=1 https://github.com/eeshdarthvader/CloudUp.git your-project-name
 ```
 
 And then install dependencies with yarn.
