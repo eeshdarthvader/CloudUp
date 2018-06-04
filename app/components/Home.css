@@ -34,6 +34,11 @@
   padding: 10px;
 }
 
+.containerStyle {
+  width: 95%;
+  margin-left: 10px;
+}
+
 .container h2 {
   font-size: 5rem;
 }
