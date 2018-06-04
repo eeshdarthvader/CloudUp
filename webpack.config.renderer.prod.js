@@ -2,16 +2,16 @@
  * Build config for electron renderer process
  */
 
-import path from 'path';
-import webpack from 'webpack';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
-import merge from 'webpack-merge';
-import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
-import baseConfig from './webpack.config.base';
-import CheckNodeEnv from './internals/scripts/CheckNodeEnv';
+import path from 'path'
+import webpack from 'webpack'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
+import merge from 'webpack-merge'
+import UglifyJSPlugin from 'uglifyjs-webpack-plugin'
+import baseConfig from './webpack.config.base'
+import CheckNodeEnv from './internals/scripts/CheckNodeEnv'
 
-CheckNodeEnv('production');
+CheckNodeEnv('production')
 
 export default merge.smart(baseConfig, {
   devtool: 'source-map',
@@ -135,6 +135,10 @@ export default merge.smart(baseConfig, {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         use: 'file-loader'
       },
+      {
+        test: /\.svg$/,
+        loader: 'file-loader'
+      },
       // SVG Font
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -150,6 +154,62 @@ export default merge.smart(baseConfig, {
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/,
         use: 'url-loader'
+      },
+      {
+        test: /\.colored\.svg/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              jsx: true,
+              es5: false,
+              svgo: {
+                pretty: true,
+                plugins: [
+                  { cleanupIDs: false },
+                  { collapseGroups: false },
+                  { removeDesc: false },
+                  { removeDoctype: false },
+                  { removeTitle: false },
+                  { removeUselessDefs: false },
+                  { removeXMLNS: true },
+                  { removeXMLProcInst: false },
+                  { removeUselessStrokeAndFill: false },
+                  { removeStyleElement: false }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /^((?!\.colored).)*(\.svg)$/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              jsx: true,
+              svgo: {
+                pretty: true,
+                plugins: [
+                  { cleanupIDs: { minify: true, prefix: '[name]-' } },
+                  { collapseGroups: true },
+                  { removeDesc: true },
+                  { removeDoctype: true },
+                  { removeTitle: true },
+                  { removeUselessDefs: true },
+                  { removeXMLNS: true },
+                  { removeXMLProcInst: true },
+                  { removeUselessStrokeAndFill: true },
+                  { removeStyleElement: true },
+                  { removeAttrs: { attrs: '(fill)' } }
+                ]
+              }
+            }
+          }
+        ]
       }
     ]
   },
@@ -181,4 +241,4 @@ export default merge.smart(baseConfig, {
       openAnalyzer: process.env.OPEN_ANALYZER === 'true'
     })
   ]
-});
+})

@@ -7,25 +7,25 @@
  * https://webpack.js.org/concepts/hot-module-replacement/
  */
 
-import path from 'path';
-import fs from 'fs';
-import webpack from 'webpack';
-import chalk from 'chalk';
-import merge from 'webpack-merge';
-import { spawn, execSync } from 'child_process';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import baseConfig from './webpack.config.base';
-import CheckNodeEnv from './internals/scripts/CheckNodeEnv';
+import path from 'path'
+import fs from 'fs'
+import webpack from 'webpack'
+import chalk from 'chalk'
+import merge from 'webpack-merge'
+import { spawn, execSync } from 'child_process'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import baseConfig from './webpack.config.base'
+import CheckNodeEnv from './internals/scripts/CheckNodeEnv'
 
-CheckNodeEnv('development');
+CheckNodeEnv('development')
 
-const port = process.env.PORT || 1212;
-const publicPath = `http://localhost:${port}/dist`;
-const dll = path.resolve(process.cwd(), 'dll');
-const manifest = path.resolve(dll, 'renderer.json');
+const port = process.env.PORT || 1212
+const publicPath = `http://localhost:${port}/dist`
+const dll = path.resolve(process.cwd(), 'dll')
+const manifest = path.resolve(dll, 'renderer.json')
 const requiredByDLLConfig = module.parent.filename.includes(
   'webpack.config.renderer.dev.dll'
-);
+)
 
 /**
  * Warn if the DLL is not built
@@ -35,8 +35,8 @@ if (!requiredByDLLConfig && !(fs.existsSync(dll) && fs.existsSync(manifest))) {
     chalk.black.bgYellow.bold(
       'The DLL files are missing. Sit back while we build them for you with "npm run build-dll"'
     )
-  );
-  execSync('npm run build-dll');
+  )
+  execSync('npm run build-dll')
 }
 
 export default merge.smart(baseConfig, {
@@ -186,6 +186,11 @@ export default merge.smart(baseConfig, {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         use: 'file-loader'
       },
+      {
+        test: /\.svg$/,
+        loader: 'file-loader'
+      },
+
       // SVG Font
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
@@ -201,6 +206,62 @@ export default merge.smart(baseConfig, {
       {
         test: /\.(?:ico|gif|png|jpg|jpeg|webp)$/,
         use: 'url-loader'
+      },
+      {
+        test: /\.colored\.svg/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              jsx: true,
+              es5: false,
+              svgo: {
+                pretty: true,
+                plugins: [
+                  { cleanupIDs: false },
+                  { collapseGroups: false },
+                  { removeDesc: false },
+                  { removeDoctype: false },
+                  { removeTitle: false },
+                  { removeUselessDefs: false },
+                  { removeXMLNS: true },
+                  { removeXMLProcInst: false },
+                  { removeUselessStrokeAndFill: false },
+                  { removeStyleElement: false }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        test: /^((?!\.colored).)*(\.svg)$/,
+        use: [
+          'babel-loader',
+          {
+            loader: 'react-svg-loader',
+            query: {
+              jsx: true,
+              svgo: {
+                pretty: true,
+                plugins: [
+                  { cleanupIDs: { minify: true, prefix: '[name]-' } },
+                  { collapseGroups: true },
+                  { removeDesc: true },
+                  { removeDoctype: true },
+                  { removeTitle: true },
+                  { removeUselessDefs: true },
+                  { removeXMLNS: true },
+                  { removeXMLProcInst: true },
+                  { removeUselessStrokeAndFill: true },
+                  { removeStyleElement: true },
+                  { removeAttrs: { attrs: '(fill)' } }
+                ]
+              }
+            }
+          }
+        ]
       }
     ]
   },
@@ -272,15 +333,15 @@ export default merge.smart(baseConfig, {
     },
     before() {
       if (process.env.START_HOT) {
-        console.log('Starting Main Process...');
+        console.log('Starting Main Process...')
         spawn('npm', ['run', 'start-main-dev'], {
           shell: true,
           env: process.env,
           stdio: 'inherit'
         })
           .on('close', code => process.exit(code))
-          .on('error', spawnError => console.error(spawnError));
+          .on('error', spawnError => console.error(spawnError))
       }
     }
   }
-});
+})
