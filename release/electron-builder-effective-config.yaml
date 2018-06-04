@@ -1,7 +1,7 @@
 directories:
   output: release
   buildResources: resources
-productName: ElectronReact
+productName: CloudUp
 appId: org.develar.ElectronReact
 files:
   - dist/

@@ -1,10 +1,10 @@
-version: 1.0.0
+version: 0.0.1
 files:
-  - url: electron-react-boilerplate-1.0.0-mac.zip
-    sha512: /dDCRsR0OX17Wkck9zSGavR6g/bXS0WVYLR2kzAvYGpaS9liN/WQQIYn/CQWTYQLA0O9nTGNT2AUGaRKfLuNiw==
-  - url: ElectronReact-1.0.0.dmg
-    sha512: t3LQN7kpxTeMAe29rxH4n3Shhc/wVb3hmjc7tJrNqYwwjpsFrAPzkDVEPGoJ4L95zVKxcyppTi7OqazjI/VtRw==
-    size: 48946455
-path: electron-react-boilerplate-1.0.0-mac.zip
-sha512: /dDCRsR0OX17Wkck9zSGavR6g/bXS0WVYLR2kzAvYGpaS9liN/WQQIYn/CQWTYQLA0O9nTGNT2AUGaRKfLuNiw==
-releaseDate: '2018-06-04T04:05:02.611Z'
+  - url: electron-react-boilerplate-0.0.1-mac.zip
+    sha512: 1qCnodqk/QI9vuHduJyH7sbxlROZcCcxdGd7IuyJae9pNmBjScAS3qsmLF1mf/UVRx7hM78f4EzglZIGphz5YQ==
+  - url: CloudUp-0.0.1.dmg
+    sha512: 1ZlctGqtTbq7aaCoh2EkE79/aNsaV+8K4locsZx3uwZ4aTzJG7IUX3LsqHYD53Bq2BxR1FKzdmze+xWV3sAa4g==
+    size: 48945495
+path: electron-react-boilerplate-0.0.1-mac.zip
+sha512: 1qCnodqk/QI9vuHduJyH7sbxlROZcCcxdGd7IuyJae9pNmBjScAS3qsmLF1mf/UVRx7hM78f4EzglZIGphz5YQ==
+releaseDate: '2018-06-04T07:07:23.490Z'

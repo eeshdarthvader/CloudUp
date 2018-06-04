@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/cleartrip/image/upload/v1528094568/cloudUp_y4zp7d.svg" width="40px">
+  <img src="https://res.cloudinary.com/cleartrip/image/upload/w_100,h_100/v1528096238/LogoMakr_0iLhlw_hcw6hu.png" width="40px">
 </p>
 <h3 align="center">
   CloudUp
@@ -17,7 +17,7 @@
 
 CloudUp is currently in beta. Please feel free to report any bugs or error you may come across.
 
-<a href="https://github.com/ghosh/Crimp/releases/download/v0.2.0/Crimp-mac-0.2.0.zip">
+<a href="https://github.com/eeshdarthvader/CloudUp/release/CloudUp-0.0.1-mac.zip">
   <img src="https://www.dropbox.com/s/q16jtzvdtenyl3x/button.svg?raw=1" width="200">
 </a>
 
@@ -94,13 +94,6 @@ $ npm run test-e2e
 DEBUG_PROD=true npm run package
 ```
 
-## How to add modules to the project
-
-You will need to add other modules to this boilerplate, depending on the requirements of your project. For example, you may want to add [node-postgres](https://github.com/brianc/node-postgres) to communicate with PostgreSQL database, or
-[material-ui](http://www.material-ui.com/) to reuse react UI components.
-
-⚠️ Please read the following section before installing any dependencies ⚠️
-
 ### Module Structure
 
 This boilerplate uses a [two package.json structure](https://github.com/electron-userland/electron-builder/wiki/Two-package.json-Structure). This means, you will have two `package.json` files.
@@ -115,12 +108,6 @@ This boilerplate uses a [two package.json structure](https://github.com/electron
 1.  If the module is native to a platform (like node-postgres), it should be listed under `dependencies` in `./app/package.json`
 2.  If a module is `import`ed by another module, include it in `dependencies` in `./package.json`. See [this ESLint rule](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md). Examples of such modules are `material-ui`, `redux-form`, and `moment`.
 3.  Otherwise, modules used for building, testing and debugging should be included in `devDependencies` in `./package.json`.
-
-### Further Readings
-
-See the wiki page, [Module Structure — Two package.json Structure](https://github.com/chentsulin/electron-react-boilerplate/wiki/Module-Structure----Two-package.json-Structure) to understand what is native module, the rationale behind two package.json structure and more.
-
-For an example app that uses this boilerplate and packages native dependencies, see [erb-sqlite-example](https://github.com/amilajack/erb-sqlite-example).
 
 ## CSS Modules
 
@@ -144,14 +131,6 @@ If you want to use Sass in your app, you only need to import `.sass` files inste
 ```js
 import './app.global.scss'
 ```
-
-## Static Type Checking
-
-This project comes with Flow support out of the box! You can annotate your code with types, [get Flow errors as ESLint errors](https://github.com/amilajack/eslint-plugin-flowtype-errors), and get [type errors during runtime](https://github.com/codemix/flow-runtime) during development. Types are completely optional.
-
-## Dispatching redux actions from main process
-
-See [#118](https://github.com/chentsulin/electron-react-boilerplate/issues/118) and [#108](https://github.com/chentsulin/electron-react-boilerplate/issues/108)
 
 ## Contributing
 
