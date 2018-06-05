@@ -2,6 +2,12 @@ directories:
   output: release
   buildResources: resources
 productName: CloudUp
+copyright: Copyright © 2017 Eesh Tyagi
+mac:
+  publish:
+    - github
+  category: public.app-category.CloudUp
+  icon: app.icns
 appId: org.develar.ElectronReact
 files:
   - dist/

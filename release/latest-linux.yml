@@ -1,0 +1,9 @@
+version: 0.0.1
+files:
+  - url: electron-react-cloudinary-0.0.1-x86_64.AppImage
+    sha512: 4D/T3IcCzYht6auIn1KDW+7ll2HkBsTfeyGsxAE3hxyWG+z10VRGmPpBnCmkWePRltBxN0O0AsATLDE6eszJDg==
+    size: 50276219
+    blockMapSize: 53439
+path: electron-react-cloudinary-0.0.1-x86_64.AppImage
+sha512: 4D/T3IcCzYht6auIn1KDW+7ll2HkBsTfeyGsxAE3hxyWG+z10VRGmPpBnCmkWePRltBxN0O0AsATLDE6eszJDg==
+releaseDate: '2018-06-05T12:23:51.052Z'
