@@ -1,0 +1,48 @@
+.container {
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  text-align: center;
+}
+
+.cloudinaryIcon {
+  margin-left: 160px;
+}
+
+.uploadPhoto {
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  top: 179px;
+  left: 122px;
+}
+
+.dropzone {
+  width: 200px;
+  height: 200px;
+  border-width: 2px;
+  border-color: rgb(193, 51, 136);
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.dropZoneFont {
+  font-size: 21px;
+  color: lightgrey;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.containerStyle {
+  width: 95%;
+  margin-left: 10px;
+}
+
+.container h2 {
+  font-size: 5rem;
+}
+
+.container a {
+  font-size: 1.4rem;
+}
