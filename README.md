@@ -42,6 +42,19 @@ $ yarn
 
 **Note**: If you can't use [yarn](https://github.com/yarnpkg/yarn), run `npm install`.
 
+Add your Cloudinary preset and api secret key in config file 
+```bash
+vi app/utils/cloudinaryAccount.js
+```
+
+```bash
+const CloudinaryConfig = {
+	upload_preset: <your_preset>,
+	api_key: <your api key>
+};
+```
+
+
 ## Run
 
 Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
