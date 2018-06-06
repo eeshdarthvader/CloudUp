@@ -1,48 +1,58 @@
 .container {
-  position: absolute;
-  top: 15%;
-  left: 10px;
-  text-align: center;
+	position: absolute;
+	top: 10%;
+	left: 0px;
+	text-align: center;
 }
 
 .cloudinaryIcon {
-  margin-left: 160px;
+	margin-left: 160px;
 }
 
 .uploadPhoto {
-  padding: 10px;
-  width: 100%;
-  position: absolute;
-  top: 179px;
-  left: 122px;
+	padding: 10px;
+	width: 100%;
+	position: absolute;
+	top: 179px;
+	left: 122px;
+}
+
+.errorMsg {
+	color: #a22e39 !important;
+	background-color: rgba(236, 232, 199, 0.22) !important;
+	border: none !important;
+	border-radius: 0 !important;
+	font-family: 'PT Sans Narrow', sans-serif !important;
+	text-align: center !important;
 }
 
 .dropzone {
-  width: 200px;
-  height: 200px;
-  border-width: 2px;
-  border-color: rgb(193, 51, 136);
-  border-style: dashed;
-  border-radius: 5px;
+	width: 200px;
+	height: 200px;
+	border-width: 2px;
+	border-color: rgb(193, 51, 136);
+	border-style: dashed;
+	border-radius: 5px;
 }
 
 .dropZoneFont {
-  font-size: 21px;
-  color: lightgrey;
-  font-family: sans-serif;
-  font-weight: 100;
-  padding: 10px;
+	font-size: 22px;
+	color: #0b0558;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 100;
+	padding: 17px;
+	text-align: center;
 }
 
 .containerStyle {
-  width: 95%;
-  margin-left: 10px;
+	width: 95%;
+	margin-left: 10px;
 }
 
 .container h2 {
-  font-size: 5rem;
+	font-size: 5rem;
 }
 
 .container a {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }

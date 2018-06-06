@@ -44,12 +44,21 @@
 		"productName": "CloudUp",
 		"copyright": "Copyright © 2017 Eesh Tyagi",
 		"mac": {
-			"publish": [ "github" ],
+			"publish": [
+				"github"
+			],
 			"category": "public.app-category.CloudUp",
 			"icon": "app.icns"
 		},
 		"appId": "org.develar.ElectronReact",
-		"files": [ "dist/", "node_modules/", "app.html", "main.prod.js", "main.prod.js.map", "package.json" ],
+		"files": [
+			"dist/",
+			"node_modules/",
+			"app.html",
+			"main.prod.js",
+			"main.prod.js.map",
+			"package.json"
+		],
 		"dmg": {
 			"contents": [
 				{
@@ -65,10 +74,15 @@
 			]
 		},
 		"win": {
-			"target": [ "nsis" ]
+			"target": [
+				"nsis"
+			]
 		},
 		"linux": {
-			"target": [ "deb", "AppImage" ],
+			"target": [
+				"deb",
+				"AppImage"
+			],
 			"category": "Development"
 		},
 		"directories": {
@@ -89,19 +103,37 @@
 	"bugs": {
 		"url": "https://github.com/eeshdarthvader/CloudUp.git/issues"
 	},
-	"keywords": [ "electron", "Cloudinary", "react", "redux", "axios", "flow", "sass", "webpack", "hot", "reload" ],
+	"keywords": [
+		"electron",
+		"Cloudinary",
+		"react",
+		"redux",
+		"axios",
+		"flow",
+		"sass",
+		"webpack",
+		"hot",
+		"reload"
+	],
 	"homepage": "https://github.com/eeshdarthvader/CloudUp.git#readme",
 	"jest": {
 		"moduleNameMapper": {
 			"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/fileMock.js",
 			"\\.(css|less|sass|scss)$": "identity-obj-proxy"
 		},
-		"moduleFileExtensions": [ "js" ],
-		"moduleDirectories": [ "node_modules", "app/node_modules" ],
+		"moduleFileExtensions": [
+			"js"
+		],
+		"moduleDirectories": [
+			"node_modules",
+			"app/node_modules"
+		],
 		"transform": {
 			"^.+\\.js$": "babel-jest"
 		},
-		"setupFiles": [ "./internals/scripts/CheckBuiltsExist.js" ]
+		"setupFiles": [
+			"./internals/scripts/CheckBuiltsExist.js"
+		]
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
@@ -178,12 +210,15 @@
 	},
 	"dependencies": {
 		"axios": "^0.18.0",
+		"bootstrap": "4.1.1",
 		"devtron": "^1.4.0",
 		"electron-debug": "^1.5.0",
 		"font-awesome": "^4.7.0",
 		"history": "^4.7.2",
+		"jquery": "^3.3.1",
 		"rc-progress": "^2.2.5",
 		"react": "^16.4.0",
+		"react-bootstrap": "^0.32.1",
 		"react-dom": "^16.4.0",
 		"react-dropzone": "^4.2.11",
 		"react-hot-loader": "^4.2.0",
@@ -192,6 +227,7 @@
 		"react-router-dom": "^4.2.2",
 		"react-router-redux": "^5.0.0-alpha.6",
 		"react-svg-loader": "2.1.0",
+		"reactstrap": "^6.1.0",
 		"redux": "^4.0.0",
 		"redux-thunk": "^2.2.0",
 		"source-map-support": "^0.5.6"
