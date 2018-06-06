@@ -11,7 +11,7 @@
 
 ---
 
-<img src="https://res.cloudinary.com/cleartrip/image/upload/v1528119839/cloudup_g93ojx.gif" width="50%" style="margin-left:24%">
+<img src="https://res.cloudinary.com/cleartrip/image/upload/v1528285553/cloudUp_newTheme_l8cwyx.gif" width="50%" style="margin-left:24%">
 
 ## Installation
 
