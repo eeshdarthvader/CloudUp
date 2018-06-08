@@ -1,7 +1,7 @@
 {
 	"name": "electron-react-cloudinary",
 	"productName": "CloudUp",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Electron application on uploading images to your cloudinary account based on React, React Router, Webpack, React Hot Loader for rapid application development",
 	"main": "./main.prod.js",
 	"author": {
