@@ -38,16 +38,16 @@ flow-typed/npm/*
 !flow-typed/npm/module_vx.x.x.js
 
 # App packaged
-release
+release/CloudUp-0.0.3.dmg
+release/CloudUp-0.0.3.dmg.blockmap
 release/github
 release/mac
-release/electron-react-cloudinary_0.0.1_amd64.deb
-release/electron-react-cloudinary-0.0.1-x86_64.AppImage
-release/CloudUp-0.0.1.dmg
+
+
 release/win-unpacked
 release/mac
 release/linux-unpacked
-release/CloudUp-0.0.1.dmg.blockmap
+
 app/main.prod.js
 app/main.prod.js.map
 app/renderer.prod.js
