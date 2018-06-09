@@ -26,6 +26,21 @@
 	text-align: center !important;
 }
 
+.configText {
+	width: 50% !important;
+	text-align: center;
+	margin-left: 26%;
+	margin-bottom: 11px;
+	margin-top: 11px;
+	background-color: rgba(255, 255, 255, 0.07) !important;
+	border: none !important;
+	color: whitesmoke !important;
+}
+
+.configText:focus {
+	box-shadow: 0 0 0 0.1rem rgba(247, 247, 247, 0.45) !important;
+}
+
 .dropzone {
 	width: 200px;
 	height: 200px;
