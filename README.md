@@ -21,7 +21,7 @@ https://cloudup.netlify.com/
 
 CloudUp is currently in beta. Please feel free to report any bugs or error you may come across.
 
-<a href="https://github.com/eeshdarthvader/CloudUp/releases/download/0.0.2/CloudUp-0.0.1-mac.zip">
+<a href="https://github.com/eeshdarthvader/CloudUp/releases/download/0.0.3/CloudUp-0.0.3-mac.zip">
   <img src="https://www.dropbox.com/s/q16jtzvdtenyl3x/button.svg?raw=1" width="200">
 </a>
 
